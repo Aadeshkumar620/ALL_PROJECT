@@ -21,7 +21,7 @@ body{
 }
 
 .main{
-    height: 100%;
+    height: 100% - 60px;
     margin-top: 60px;
     padding: 10px 50px;
 }
@@ -34,7 +34,7 @@ body{
     margin-top: 60px;
     background-color: #2e86de;
     transform:translateX(-250px);
-    transition:transform 250ms ease-in-out; 
+    transition:transform 350ms ease-in-out; 
 }
 #openSidebar:checked ~ #sidebarMenu{
     transform:translateX(0px);
