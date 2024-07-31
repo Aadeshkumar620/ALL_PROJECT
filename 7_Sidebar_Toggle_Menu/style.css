@@ -19,22 +19,13 @@ body{
     z-index: 10;
 
 }
-.sidebarIconToggle{
-    height:22px;
-    width:22px;
-    position: absolute;
-    z-index:20 ;
-    top: 22px;
-    left: 15px;
-    cursor: pointer;
-    background-color: #fff;
-}
+
 .main{
     height: 100%;
     margin-top: 60px;
     padding: 10px 50px;
 }
-.sidebarMenu{
+#sidebarMenu{
     height: 100%;
     position: fixed;
     left: 0;
@@ -42,6 +33,11 @@ body{
     width: 250px;
     margin-top: 60px;
     background-color: #2e86de;
+    transform:translateX(-250px);
+    transition:transform 250ms ease-in-out; 
+}
+#openSidebar:checked ~ #sidebarMenu{
+    transform:translateX(0px);
 }
 .menu{
     list-style: none;
@@ -53,6 +49,7 @@ body{
 .menu li{
     color:#fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    width: 250px;
 }
 .menu li a{
     color:#fff;
@@ -63,4 +60,36 @@ body{
     text-wrap: nowrap;
 
 }
+#sidebarIconToggle{
+    height:22px;
+    width:22px;
+    position: absolute;
+    z-index:20 ;
+    top: 22px;
+    left: 15px;
+    cursor: pointer;
+
+}
+.spinner{
+    height:3px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.spinner.middle, .spinner.buttom{
+    margin-top: 3px;
+}
+#openSidebar:checked ~ #sidebarIconToggle > .spinner.middle{
+    opacity: 0;
+}
+
+#openSidebar:checked ~ #sidebarIconToggle > .spinner.top{
+    transform: rotate(130deg);
+    margin-top: 8px;
+}
+
+#openSidebar:checked ~ #sidebarIconToggle > .spinner.buttom{
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
 
