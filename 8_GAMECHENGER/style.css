@@ -7,6 +7,10 @@
 html, body{
     width:100%;
     height:100%;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 #main{
     width:100%;
@@ -101,6 +105,7 @@ html, body{
     color:white;
     width: 100%;
     height: 100vh;
+    
 }
 .elem{
     display: flex;
@@ -137,8 +142,9 @@ html, body{
     padding: 10vw 5vw;
     color:white;
     gap:50px;
-    padding: 10vw 10vw;
+    padding: 20vw 10vw;
     padding-left: 40vw;
+    
 }
 #about img{
     width:15vw;
@@ -164,7 +170,45 @@ html, body{
     text-decoration: none;
     background-color: black;
 }
+#subscribe{
+    width:100%;
+    background-color: black;
+    color:#ffff;
+    padding: 20px 30px;
+    padding-bottom: 7vw;
+    
+}
+#subscribe h5{
+    opacity: 0.6;
+}
+#subscribe h3{
+    opacity: 0.6;
+    font-size: 14px;
+    margin-top: 10px;
+}
 
-
+#footer{
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+#footerleft{
+    display: flex;
+    gap: 20px;
+}
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+#footer a{
+    color:#ffff;
+    text-decoration: none;
+    
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
