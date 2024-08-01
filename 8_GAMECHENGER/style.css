@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+html, body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width:100%;
+
+}
+#hero{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    color:white;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width:100%;
+    padding: 20px 40px;
+    color:white;
+}
+#nav a{
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#heading{
+    margin-top: 40px;
+}
+#heading h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.6;
+    margin-left: 30px;
+}
+#heading #second1{
+    margin-left: 130px;
+}
+.blocktext{
+    width:fit-content;
+   
+}
+.blocktext h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+#chhotiheadings{
+    margin-top: 100px;
+    padding-right: 50px;
+
+}
+#chhotiheadings h5{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+}
+#herofooter{
+    padding: 0 1.5vw;
+
+    width:100%;
+    position: absolute;
+    bottom:3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#herofooter a{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#herofooter #iconset{
+    display: flex;
+    gap:5px;
+}
+#herofooter .circle{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    background-color: #888;
+}
+
+#second{
+    padding-top: 200px;
+    padding-right: 10vw;
+    background-color: black;
+    color:white;
+    width: 100%;
+    height: 100vh;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5vw 3vw;
+    padding-right: 0;
+    width: 100%;
+    border-top: 1px solid #888;
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 7.6vw;
+    opacity: 0.7;
+}
+.elemlast{
+    border-bottom: 1px solid #888; ;
+}
+
